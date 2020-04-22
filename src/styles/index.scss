@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$base-color: #1f1b24;
+$text-color: #fff;
+$gradient-color: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+$shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+  0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+  0 16px 16px rgba(0, 0, 0, 0.12);
+
+* {
+  background: $gradient-color;
+  color: $text-color;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titleCard {
+  background: none;
+  padding: 0.2em;
+  border-radius: 5px;
+  width: 20%;
+  text-align: center;
+  color: $text-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 2%;
+  display: flex;
+}
+
+.imageContainer {
+  background: none;
+  width: 40%;
+  align-items: center;
+
+  img {
+    margin-top: 3%;
+    border-radius: 0.75em;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    box-shadow: $shadow;
+  }
+
+  .imageName {
+    background: none;
+  }
+
+  p {
+    margin-top: 1%;
+    background: none;
+    opacity: 60%;
+  }
+}
+
+.quote {
+  padding: 1.5% 2%;
+  border-radius: 0.5em;
+  background: #fff;
+  color: #000;
+  width: 40%;
+  line-height: 1.5em;
+  text-align: justify;
+  box-shadow: $shadow;
+}
